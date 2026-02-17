@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | Human Space Activities</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="home.html">
+        <img src="images/logo-helmet.png" alt="Astronaut helmet logo">
+      </a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="future.html">Future</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- CONTACT FORM SECTION -->
+    <section class="contact-section">
+
+      <h2>Contact Us</h2>
+
+      <form class="contact-form" action="#" method="post">
+
+        <!-- NAME FIELD -->
+        <label for="name">Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Enter your full name" 
+          maxlength="100" 
+          pattern="[A-Za-z\s]+" 
+          required>
+        <span class="error-message">Name must contain letters only.</span>
+
+        <!-- EMAIL FIELD -->
+        <label for="email">Email</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email address" 
+          maxlength="255" 
+          required>
+        <span class="error-message">Please enter a valid email address.</span>
+
+        <!-- MESSAGE FIELD -->
+        <label for="message">Message</label>
+        <textarea 
+          id="message" 
+          name="message" 
+          placeholder="Type your message here" 
+          maxlength="1000" 
+          required></textarea>
+        <span class="error-message">Message cannot be empty.</span>
+
+        <!-- SUBMIT BUTTON -->
+        <button type="submit" class="submit-btn">Send Message</button>
+
+      </form>
+
+      <!-- GOOGLE MAP -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2535.233430669421!2d-3.535246723497212!3d50.73793167164071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486c5e3b7b2f0c4d%3A0xaea0aefdd0b2de2d!2sUniversity%20of%20Exeter!5e0!3m2!1sen!2uk!4v1700000000000"
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © Copyright 2026. All rights reserved.
+  </footer>
+
+</body>
+</html>
